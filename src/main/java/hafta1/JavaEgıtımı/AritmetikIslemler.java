@@ -10,8 +10,8 @@ public class AritmetikIslemler {
 
         System.out.println("a :");
         int a = scanner.nextInt();
-        System.out.println("b :");
 
+        System.out.println("b :");
         int b = scanner.nextInt();
 
         System.out.println("c :");
