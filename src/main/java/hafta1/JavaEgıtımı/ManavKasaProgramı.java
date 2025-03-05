@@ -31,6 +31,6 @@ public class ManavKasaProgramı {
 
         double deger = Armut * armutFiyat + Elma * elmaFiyat + Domates * domatesFiyat + Muz * muzFiyat + Patlıcan * patlicanFiyat;
 
-        System.out.println("Toplam Tutar :" + deger);
+        System.out.println("Toplam Tutar: " + deger);
     }
 }
