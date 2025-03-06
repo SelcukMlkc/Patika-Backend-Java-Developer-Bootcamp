@@ -2,7 +2,7 @@ package hafta1.JavaEgıtımı;
 
 import java.util.Scanner;
 
-public class CinZodyagı {
+public class ChineseZodiac {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);

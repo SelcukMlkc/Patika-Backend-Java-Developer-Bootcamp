@@ -2,7 +2,7 @@ package hafta1.JavaEgıtımı;
 
 import java.util.Scanner;
 
-public class ManavKasaProgramı {
+public class GroceryCashierProgram {
 
     public static void main(String[] args) {
 

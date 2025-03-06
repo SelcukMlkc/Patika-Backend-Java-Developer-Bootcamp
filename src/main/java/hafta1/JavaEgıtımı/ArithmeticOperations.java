@@ -2,7 +2,7 @@ package hafta1.JavaEgıtımı;
 
 import java.util.Scanner;
 
-public class AritmetikIslemler {
+public class ArithmeticOperations {
 
     public static void main(String[] args) {
 

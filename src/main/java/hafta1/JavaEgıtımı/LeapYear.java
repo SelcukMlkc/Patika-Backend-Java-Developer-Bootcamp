@@ -1,9 +1,8 @@
 package hafta1.JavaEgıtımı;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
-public class ArtıkYılHesaplama {
+public class LeapYear {
 
     public static void main(String[] args) {
 
