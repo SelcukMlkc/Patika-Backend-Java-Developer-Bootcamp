@@ -1,4 +1,4 @@
-package hafta1.Döngüler;
+package hafta1.Loops;
 
 import java.util.Scanner;
 
