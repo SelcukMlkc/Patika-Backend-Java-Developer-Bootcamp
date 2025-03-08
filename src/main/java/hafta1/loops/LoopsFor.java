@@ -1,4 +1,4 @@
-package hafta1.JavaEgıtımı;
+package hafta1.loops;
 
 public class LoopsFor {
 

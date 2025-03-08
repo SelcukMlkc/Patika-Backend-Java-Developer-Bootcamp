@@ -1,4 +1,4 @@
-package hafta1.JavaEgıtımı;
+package hafta1.ifElseSwitchCase;
 
 public class SwitchcaseMain3 {
     public static void main(String[] args) {

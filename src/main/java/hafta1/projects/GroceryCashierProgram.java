@@ -1,4 +1,4 @@
-package hafta1.JavaEgıtımı;
+package hafta1.projects;
 
 import java.util.Scanner;
 

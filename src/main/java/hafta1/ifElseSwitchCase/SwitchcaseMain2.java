@@ -1,4 +1,4 @@
-package hafta1.JavaEgıtımı;
+package hafta1.ifElseSwitchCase;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package hafta1.Loops;
+package hafta1.loops;
 
 import java.util.Scanner;
 
@@ -24,14 +24,14 @@ public class LoopsDoWhile2 {
 
                 System.out.println("Doğru bir şifre girdiniz.");
                 isPasswordFalse = false;
-                //break;
+                break;
 
             } else {
                 System.out.println("Yanlış bir şifre girdiniz.");
                 counter++;
             }
 
-        } while (isPasswordFalse = false || counter < 3);
+        } while (counter < 3);
 
     }
 }
