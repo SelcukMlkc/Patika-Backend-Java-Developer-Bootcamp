@@ -8,14 +8,16 @@ public class FlightTicket {
 
         Scanner scanner = new Scanner(System.in);
 
+        // int distance, age, direction ; sonrasında age = input.NextInt() şeklinde de yapabilirdim.
+
         System.out.println("Mesafeyi km türünden giriniz: ");
-        double distance = scanner.nextDouble();
+        int distance = scanner.nextInt();
 
         System.out.println("Yaşınızı giriniz :");
-        double age = scanner.nextDouble();
+        int age = scanner.nextInt();
 
         System.out.println("Yolculuk tipini giriniz (1 => Tek Yön , 2 => Gidiş Dönüş ):");
-        double direction = scanner.nextDouble();
+        int direction = scanner.nextInt();
 
         double price = distance * 0.10;
         if (direction == 2) {
