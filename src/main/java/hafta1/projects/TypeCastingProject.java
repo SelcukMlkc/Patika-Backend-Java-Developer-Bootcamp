@@ -14,9 +14,9 @@ public class TypeCastingProject {
         System.out.println("Bir ondalıklı sayı giriniz = ");
         double decimalNumber = scanner.nextDouble();
 
-        double castinginteger = integer;
+        double castinginteger = integer;  // girilen tam sayıyı ondalıklı sayıya dönüştürdük
 
-        int castingdouble = (int) decimalNumber;
+        int castingdouble = (int) decimalNumber;  // girilen ondalıklı sayıyı tam sayıya dönüştürdük
 
         System.out.println("Tam sayınızın ondalıklı sayıya dönüştürülmüş hali = " + castinginteger);
         System.out.println("Ondalıklı sayınızın tam sayıya dönüştürülmüş hali = " + castingdouble);
