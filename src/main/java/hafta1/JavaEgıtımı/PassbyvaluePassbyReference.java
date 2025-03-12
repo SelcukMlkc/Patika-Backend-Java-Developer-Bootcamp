@@ -1,4 +1,4 @@
-package hafta1.arrays;
+package hafta1.JavaEgıtımı;
 
 public class PassbyvaluePassbyReference {
 
