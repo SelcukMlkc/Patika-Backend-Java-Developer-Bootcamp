@@ -13,7 +13,7 @@ class Mızrakcı {
     int atlıSavunma;
     int yayaSavunma;
 
-    public Mızrakcı() {
+    public Mızrakcı() {       // nesne tanımlama
         this.saldırı = 10;
         this.atlıSavunma = 60;
         this.yayaSavunma = 30;
