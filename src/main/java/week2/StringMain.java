@@ -17,7 +17,16 @@ public class StringMain {
 
         // char a = flower.charAt(7); StringIndexOutOfBoundsException hatası alırız
 
-        flower.indexOf()
+        System.out.println(flower.indexOf('a')); //a harfinin kaçıncı index de olduğunu yazdırdık. Tam tersini yaptık yani.,
+
+        System.out.println(flower.indexOf('a', 2)); //2. indexten aramaya başlattık bu sefer
+
+        System.out.println(flower.substring(2));
+
+        System.out.println(flower.substring(2,5)); // bitiş indexini dahil etmedi
+
+
+
 
 
 
