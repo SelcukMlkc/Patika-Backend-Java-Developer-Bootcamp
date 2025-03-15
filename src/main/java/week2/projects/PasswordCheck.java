@@ -12,42 +12,17 @@ public class PasswordCheck {
         //  3-İlk harf büyük harf olmalı,
         //  4-Son karakteri ? olmalı
 
-        String code = "Ankara06?";  //Sistemde kayıtlı olan şifreyi belirledim
-
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Lütfen şifreyi giriniz : ");
-        String password = scanner.nextLine(); // Kullanıcıdan şifre aldık
+        System.out.println("Lütfen bir şifre oluşturunuz : ");
+        String password = scanner.next();
 
-        int length = password.length();
-
-        if (length < 8 ) {
-            System.out.println("Geçersiz Şifre! Şifre en az 8 karakter içermeli!");
+        if(password.length()<8 || password.contains(" ") || !Character.isUpperCase(password.charAt(0)) || !password.endsWith("?")){
+            System.out.println("Geçersiz şifre");
         }
-
-        else if (password.contains(" ")) {
-
-            System.out.println("Geçersiz Şifre! Şifre space karakteri içermemeli!");
+        else{
+            System.out.println("Geçerli şifre");
         }
-
-        else if (!Character.isUpperCase(password.charAt(0))) {   //tek bir karakter için bu metodu kullanıyoruz
-
-            System.out.println("Geçersiz Şifre! Şifre'nin İlk harf büyük harf olmalı!");
-        }
-
-        else if (!password.endsWith("?")) {
-
-            System.out.println("Geçersiz Şifre! Şifre'nin son karakteri ? olmalı!");
-        }
-
-        else if (password.equals(code)) {
-
-            System.out.println("Geçerli Şifre!");
-        }
-        else {
-            System.out.println("Geçersiz Şifre!");
-        }
-
-
+        scanner.close();
     }
 }
