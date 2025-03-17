@@ -1,4 +1,4 @@
-package week2.methods.practices;
+package week2.projects;
 
 import java.util.Scanner;
 
