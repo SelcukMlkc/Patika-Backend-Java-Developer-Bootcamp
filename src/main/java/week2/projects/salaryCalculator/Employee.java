@@ -1,4 +1,4 @@
-package week2.projects;
+package week2.projects.salaryCalculator;
 
 public class Employee {
 
@@ -67,10 +67,6 @@ public class Employee {
 
     }
 
-    public static void main(String[] args) {
-        Employee emp = new Employee("kemal", 2000, 45, 1985);
-        System.out.println(emp.information());
-    }
     }
 
 
