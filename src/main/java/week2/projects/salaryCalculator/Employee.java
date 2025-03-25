@@ -48,7 +48,7 @@ public class Employee {
         }
     }
 
-    // Bilgileri yazdır
+    // Bilgileri yazdır.
     public String information() {
         double tax = tax();
         double bonus = bonus();
