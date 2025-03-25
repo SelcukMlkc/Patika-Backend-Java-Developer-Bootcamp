@@ -6,6 +6,10 @@ public class Car extends Object{
 
     private String model;
 
+    public static int horsePower = 150;
+
+    public static final int MAX_HORSE_POWER = 150;  //constant -> degistirilemez
+
     public Car () {
 
 

@@ -1,6 +1,6 @@
 package week2.technicalContent3.samples;
 
-public class Child extends Parent{
+public class Child extends Parent{   // final bir class ı extends edemezsin dibnot!
 
     //extends Parent açıklaması:
     //📌 Child sınıfı, Parent sınıfından miras alıyor (extends Parent).
@@ -23,7 +23,8 @@ public class Child extends Parent{
     }  */
 
     @Override
-    public String getMessage() {
+    public String getMessage() {   //finaller override edilemez. Yani bir metodu final olarak tanımlarsan,
+        // bu metot alt sınıflar (subclass) tarafından override edilemez. Yani, değiştirilemez, sadece olduğu gibi kullanılabilir.
         return message;
     }
 

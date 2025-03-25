@@ -25,7 +25,31 @@ public class KeywordTest {
         System.out.println("super & this keyword");
        // Child child = new Child("message");
 
-    }
+        int add = MathUtil.add(5, 7);
 
+        Car car3 = new Car();
+        System.out.println(Car.horsePower);
+
+        System.out.println(car3.horsePower);
+
+        Car.horsePower = 170;
+
+        System.out.println(Car.horsePower);
+
+        System.out.println(car3.horsePower);
+
+        car3.horsePower=90;
+
+        System.out.println(car2.horsePower);
+
+        //
+
+        System.out.println("final");
+
+        // Car.MAX_HORSE_POWER=280; degistirilemez deger
+
+
+
+    }
 
 }
