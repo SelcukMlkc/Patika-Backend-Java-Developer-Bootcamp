@@ -1,4 +1,4 @@
-package week2.technicalContent4;
+package week2.technicalContent4.abstractClass;
 
 public class Cat extends CatFamily {
 
