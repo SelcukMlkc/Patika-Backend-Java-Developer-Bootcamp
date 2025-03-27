@@ -25,6 +25,39 @@ public class BankAccount {
         } else {
             System.out.println("Geçersiz tutar!");
         }
+    }
 
+    public String getAccountNumber() {
+        return accountNumber;
+    }
+
+    public double getBalance() {
+        return balance;
+    }
+
+    public CurrencyType getCurrencyType() {
+        return currencyType;
+    }
+
+    @Override
+    public String toString() {
+        return "BankAccount{" +
+                "accountNumber='" + accountNumber + '\'' +
+                ", balance=" + balance +
+                ", currencyType=" + currencyType +
+                '}';
+    }
+
+    public void withDraw(double amount){
+        if (amount > 0 && amount <= balance) {
+            balance -= amount;
+            System.out.println(amount + " " + currencyType.getSymbol() + " çekildi. Yeni bakiyeniz = " + balance + " " + currencyType.getSymbol());
+
+        } else if (amount > balance) {
+            System.out.println("Yetersiz Bakiye!");
+
+    } else {
+            System.out.println("Geçersiz tutar!");
+        }
     }
 }

@@ -14,6 +14,8 @@ public class Customer {
 
     private BankAccount[] bankAccounts;
 
+    private int bankAccountCounter = 0;
+
 
     public Customer(String name, String surname, String password, String identity) {
 
@@ -29,6 +31,30 @@ public class Customer {
 
             System.out.println("Kullanıcı oluşturuldu. " + this);
     }
+    }
+
+    public void addAccount(BankAccount bankAccount) {
+
+        if (bankAccountCounter < bankAccounts.length) {
+
+            bankAccounts[bankAccountCounter] = bankAccount;
+            bankAccountCounter++;
+            System.out.println("Yeni hesap eklendi: " + bankAccount.getAccountNumber());
+        } else {
+            System.out.println("Maksimum hesap limitine ulaşıldı!");
+        }
+
+    }
+
+    public void listAccounts() {
+
+        System.out.println(getName() + " adlı kullanıcının hesapları: ");
+
+        for (BankAccount bankAccount : bankAccounts) {
+
+            System.out.println(bankAccount);
+        }
+
     }
 
     public String getName() {
@@ -54,6 +80,12 @@ public class Customer {
     public void setPassword(String password) {
         this.password = password;
     }
+
+    public BankAccount[] getBankAccounts() {
+        return bankAccounts;
+    }
+
+
 
     @Override
     public String toString() {
