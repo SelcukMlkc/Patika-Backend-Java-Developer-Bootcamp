@@ -30,6 +30,10 @@ class Movie {
         return movieType;
     }
 
+    public int getMovieYear() {
+        return movieYear;
+    }
+
     @Override
     public String toString() {
         return "Movie{" +

@@ -23,6 +23,16 @@ public class MovieList {
             System.out.println(movie);
         }
 
+        System.out.println("-----------------------");
+
+        // **Yayın Yılına Göre Küçükten Büyüğe Sıralama**
+        Collections.sort(movieList, Comparator.comparingInt(Movie::getMovieYear));
+
+        System.out.println("Yapım Yılına Göre Küçükten Büyüğe Sıralanmış Liste:");
+        for (Movie movie : movieList) {
+            System.out.println(movie);
+        }
+
         Scanner scanner = new Scanner(System.in);
         System.out.print("Filtrelemek istediğiniz film türünü giriniz: ");
         String movieType = scanner.nextLine();
