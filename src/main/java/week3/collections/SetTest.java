@@ -1,6 +1,5 @@
-package week3;
+package week3.collections;
 
-import javax.print.attribute.standard.MediaSize;
 import java.util.HashSet;
 import java.util.LinkedHashSet;
 import java.util.Set;
