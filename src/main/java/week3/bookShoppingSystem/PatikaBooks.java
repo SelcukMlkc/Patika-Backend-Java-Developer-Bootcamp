@@ -11,6 +11,7 @@ import week3.bookShoppingSystem.service.UserService;
 
 import java.time.LocalDate;
 import java.util.List;
+import java.util.Scanner;
 
 public class PatikaBooks {
 
@@ -50,6 +51,65 @@ public class PatikaBooks {
             orderService.create(List.of(product, product1), user);
 
             orderService.list();
+
+
+
+            //-----------
+
+
+        Scanner scanner = new Scanner(System.in);
+
+
+        while (true) {
+
+            System.out.println("1. Müşteri Kaydı");
+            System.out.println("2. Sipariş Ver");
+            System.out.println("3. Siparişlerimi Görüntüle");
+            System.out.println("4. Ürünleri Görüntüle");
+            System.out.println("5. Çıkış");
+
+            int choise = scanner.nextInt();
+
+            switch (choise) {
+
+                case 1:
+                    System.out.println("Müşteri ismini girin: ");
+                    String name = scanner.nextLine();
+                    System.out.println("Müşteri email adresini girin: ");
+                    String email = scanner.nextLine();
+                    System.out.println("Müşteri şifresini giriniz: ");
+                    String password = scanner.nextLine();
+
+                    userService.create(name, email, password);
+                    break;
+
+                case 2:
+                    System.out.println("Müşteri email adresini girin: ");
+                    String givenEmail = scanner.nextLine();
+                    User foundUser = userService.findUserByEmail(givenEmail);
+                    System.out.println("Ürün ismini giriniz: ");
+                    String productName = scanner.nextLine();
+                    Product foundProduct = productService.findProductByName(productName);
+                    orderService.create(List.of(foundProduct), foundUser);
+                    break;
+
+
+                case 3:
+                    System.out.println("Çıkış yapılıyor...");
+                    scanner.close();
+                    return;
+
+
+                default:
+                    System.out.println("Geçersiz bir işlem!");
+
+
+
+            }
+        }
+
+
+
 
 
     }

@@ -5,6 +5,7 @@ import week3.bookShoppingSystem.model.enums.Gender;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class User {
 
@@ -78,5 +79,17 @@ public class User {
                 ", isActive=" + isActive +
                 ", orderList=" + orderList +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == null || getClass() != o.getClass()) return false;
+        User user = (User) o;
+        return Objects.equals(email, user.email);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hashCode(email);
     }
 }
