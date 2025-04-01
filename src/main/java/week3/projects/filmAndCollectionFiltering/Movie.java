@@ -1,8 +1,4 @@
-package week3.projects.FilmAndCollectionFiltering;
-
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
+package week3.projects.filmAndCollectionFiltering;
 
 class Movie {
 

@@ -1,4 +1,4 @@
-package week3.projects.FilmAndCollectionFiltering;
+package week3.projects.filmAndCollectionFiltering;
 
 import java.util.*;
 import java.util.stream.Collectors;
