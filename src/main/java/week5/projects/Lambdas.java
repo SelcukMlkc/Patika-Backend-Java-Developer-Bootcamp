@@ -16,9 +16,11 @@ public class Lambdas {
         numbers.add(5);
 
         // Sayıları iki katına çıkarma (Lambda ile)
+        //replaceAll metotudunun mantığı:  Listedeki her elemanı al, verdiğin lambda ifadesine göre değiştir ve yerine yaz demek.
         numbers.replaceAll(number -> number * 2);
 
         // Sonuçları yazdırma (Lambda ile)
         numbers.forEach(number -> System.out.println(number));
+
     }
 }
