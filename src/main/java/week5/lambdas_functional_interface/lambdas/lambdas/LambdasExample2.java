@@ -1,4 +1,4 @@
-package week5.lambdas_functional_interface.lambdas;
+package week5.lambdas_functional_interface.lambdas.lambdas;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -30,6 +30,9 @@ public class LambdasExample2 {
         //var invalid (Animal animal) -> animal.canHop();
 
         //boolean valid = (Animal a) -> return.a.canHop();
+
+        //valid
+        CheckTrait checker = (Animal a) -> a.canHop();
     }
 
     private static void print(List<Animal>animalList, CheckTrait checker) {
