@@ -13,6 +13,10 @@ public class Course {
     private Integer note;
 
 
+    public Course(String name) {
+        this.name = name;
+    }
+
     public Course(String name, String code, Integer hourseOfWeek) {
         this.name = name;
         this.code = code;

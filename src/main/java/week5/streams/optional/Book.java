@@ -1,4 +1,4 @@
-package week5.streams;
+package week5.streams.optional;
 
 public class Book {
 
